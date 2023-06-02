@@ -7,11 +7,11 @@ docker build -t item-app:v1 .
 docker images
 
 # Mengubah nama image agar sesuai dengan format GitHub Packages
-docker tag item-app:v1 docker.pkg.github.com/kecoax-code/a433-microservices/item-app:v1
+docker tag item-app:v1 ghcr.io/kecoax-code/a433-microservices/item-app:v1
 
 # Login ke GitHub Packages
 # di terminal : export TOKEN_GITHUB=<ghp_xxxx>
-docker login docker.pkg.github.com -u kecoax-code -p $TOKEN_GITHUB
+docker login ghcr.io -u kecoax-code -p $TOKEN_GITHUB
 
 # Mengunggah image ke GitHub Packages
-docker push docker.pkg.github.com/kecoax-code/a433-microservices/item-app:v1
+docker push ghcr.io/kecoax-code/a433-microservices/item-app:v1
