@@ -1,43 +1,44 @@
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.268+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=0b691d594be0
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I CONTROL  [initandlisten] db version v3.6.23
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I CONTROL  [initandlisten] allocator: tcmalloc
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I CONTROL  [initandlisten] modules: none
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I CONTROL  [initandlisten] build environment:
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I CONTROL  [initandlisten]     distarch: x86_64
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I CONTROL  [initandlisten]     target_arch: x86_64
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I STORAGE  [initandlisten] 
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.269+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
-proyek-pertama-item-db-1  | 2023-06-01T15:24:27.270+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3429M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.025+0000 I STORAGE  [initandlisten] WiredTiger message [1685633068:25368][1:0x7fad869dda40], txn-recover: Set global recovery timestamp: 0
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.203+0000 I CONTROL  [initandlisten] 
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.204+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.204+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.204+0000 I CONTROL  [initandlisten] 
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.204+0000 I CONTROL  [initandlisten] 
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.204+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.204+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.204+0000 I CONTROL  [initandlisten] 
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.204+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 4ac50a24-e815-4ae6-8cd6-c27f47d6ba68
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.263+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.263+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 662063f4-179e-45e7-84a5-5edb50f6d7b1
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.321+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.321+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.321+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: a5d68c22-5e85-48a9-a7d0-7e53fa2eab66
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.321+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.321+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.397+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.397+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.399+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.525+0000 I NETWORK  [listener] connection accepted from 172.23.0.3:39580 #1 (1 connection now open)
-proyek-pertama-item-db-1  | 2023-06-01T15:24:28.528+0000 I NETWORK  [conn1] received client metadata from 172.23.0.3:39580 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.90.1-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
-proyek-pertama-item-app-1  | 
-proyek-pertama-item-app-1  | > docker-software-delivery@1.0.0 start /app
-proyek-pertama-item-app-1  | > node ./bin/www
-proyek-pertama-item-app-1  | 
-proyek-pertama-item-app-1  | NODE_ENV: production
-proyek-pertama-item-app-1  | Connected to database
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.830+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=1f58eb789958
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I CONTROL  [initandlisten] db version v3.6.23
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I CONTROL  [initandlisten] modules: none
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I CONTROL  [initandlisten] build environment:
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I CONTROL  [initandlisten]     distarch: x86_64
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I STORAGE  [initandlisten] 
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.831+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+a433-microservices-item-db-1  | 2023-06-02T03:13:43.832+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3429M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.589+0000 I STORAGE  [initandlisten] WiredTiger message [1685675624:589060][1:0x7fa514a99a40], txn-recover: Set global recovery timestamp: 0
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.797+0000 I CONTROL  [initandlisten] 
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.797+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.797+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.797+0000 I CONTROL  [initandlisten] 
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.797+0000 I CONTROL  [initandlisten] 
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.798+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.798+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.798+0000 I CONTROL  [initandlisten] 
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.799+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 7f584558-acbb-476d-ab1c-4da71d19f8d1
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.869+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.869+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 350937ea-ca71-4b37-b44d-13f882fcf164
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.937+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.939+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.939+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 5978f971-1b9d-43a1-be91-e7f9e34da387
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.940+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+a433-microservices-item-db-1  | 2023-06-02T03:13:44.940+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+a433-microservices-item-db-1  | 2023-06-02T03:13:45.041+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+a433-microservices-item-db-1  | 2023-06-02T03:13:45.041+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+a433-microservices-item-db-1  | 2023-06-02T03:13:45.042+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+a433-microservices-item-db-1  | 2023-06-02T03:13:45.042+0000 I COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:98 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_msg 103ms
+a433-microservices-item-db-1  | 2023-06-02T03:13:45.189+0000 I NETWORK  [listener] connection accepted from 172.25.0.3:58194 #1 (1 connection now open)
+a433-microservices-item-db-1  | 2023-06-02T03:13:45.195+0000 I NETWORK  [conn1] received client metadata from 172.25.0.3:58194 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.90.1-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+a433-microservices-item-app-1  | 
+a433-microservices-item-app-1  | > docker-software-delivery@1.0.0 start /app
+a433-microservices-item-app-1  | > node ./bin/www
+a433-microservices-item-app-1  | 
+a433-microservices-item-app-1  | NODE_ENV: production
+a433-microservices-item-app-1  | Connected to database
