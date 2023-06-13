@@ -7,7 +7,7 @@ docker build -t karsajobs .
 docker tag karsajobs ghcr.io/kecoax-code/a433-microservices/karsajobs:latest
 
 # Login ke GitHub Packages
-docker login ghcr.io -u kecoax-code -p $CR_PAT
+docker login ghcr.io -u kecoax-code -p $GITHUB_TOKEN
 
 # Mengunggah image ke GitHub Packages
 docker push ghcr.io/kecoax-code/a433-microservices/karsajobs:latest
