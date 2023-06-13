@@ -1,0 +1,53 @@
+version: 2.1
+jobs:
+  lint-dockerfile:
+    docker:
+      - image: circleci/golang:1.17
+    steps:
+      - checkout
+      - run:
+          name: Install hadolint
+          command: |
+            curl -sL -o hadolint "https://github.com/hadolint/hadolint/releases/latest/download/hadolint-$(uname -s)-$(uname -m)"
+            chmod +x hadolint
+            sudo mv hadolint /usr/local/bin/
+      - run:
+          name: Lint Dockerfile
+          command: |
+            hadolint Dockerfile
+
+  test-app:
+    docker:
+      - image: circleci/golang:1.17
+    steps:
+      - checkout
+      - run:
+          name: Run unit tests
+          command: |
+            go test -v -short --count=1 $(go list ./...)
+
+  build-app-karsajobs:
+    docker:
+      - image: docker:stable
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 20.10.8
+      - run:
+          name: Build and push image
+          command: |
+            echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+            docker build -t ghcr.io/kecoax-code/a433-microservices/karsajobs:latest .
+            docker push ghcr.io/kecoax-code/a433-microservices/karsajobs:latest
+
+workflows:
+  version: 2.1
+  build-and-test:
+    jobs:
+      - lint-dockerfile
+      - test-app:
+          requires:
+            - lint-dockerfile
+      - build-app-karsajobs:
+          requires:
+            - test-app
