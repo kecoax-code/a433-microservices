@@ -1,0 +1,38 @@
+version: 2.1
+jobs:
+  lint-dockerfile:
+    docker:
+      - image: circleci/python:3.9
+    steps:
+      - checkout
+      - run:
+          name: Install hadolint
+          command: |
+            pip install hadolint
+      - run:
+          name: Lint Dockerfile
+          command: |
+            hadolint Dockerfile
+
+  build-app-karsajobs-ui:
+    docker:
+      - image: docker:stable
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 20.10.18
+      - run:
+          name: Build and push image
+          command: |
+            docker login ghcr.io -u $GITHUB_USER -p $GITHUB_TOKEN
+            docker build -t ghcr.io/kecoax-code/a433-microservices/karsajobs-ui:latest .
+            docker push ghcr.io/kecoax-code/a433-microservices/karsajobs-ui:latest
+
+workflows:
+  version: 2.1
+  build-and-test:
+    jobs:
+      - lint-dockerfile
+      - build-app-karsajobs-ui:
+          requires:
+            - lint-dockerfile
