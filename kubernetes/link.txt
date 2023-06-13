@@ -1,0 +1,10 @@
+GithubRepo
+----------
+BE : https://github.com/kecoax-code/a433-microservices/tree/karsajobs
+FE : https://github.com/kecoax-code/a433-microservices/tree/karsajobs-ui
+
+
+GithubPackages
+-------------------
+BE : https://github.com/users/kecoax-code/packages/container/package/a433-microservices%2Fkarsajobs
+FE : https://github.com/users/kecoax-code/packages/container/package/a433-microservices%2Fkarsajobs-ui
