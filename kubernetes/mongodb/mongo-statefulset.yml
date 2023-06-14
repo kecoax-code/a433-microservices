@@ -18,6 +18,11 @@ spec:
           image: mongo:3
           ports:
             - containerPort: 27017
+          env:
+            - name: MONGO_INITDB_ROOT_USERNAME_FILE
+              value: "/etc/mongo-credentials/MONGO_ROOT_USERNAME"
+            - name: MONGO_INITDB_ROOT_PASSWORD_FILE
+              value: "/etc/mongo-credentials/MONGO_ROOT_PASSWORD"
           volumeMounts:
             - name: mongo-persistent-storage
               mountPath: /data/db
