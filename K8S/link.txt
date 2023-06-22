@@ -1,0 +1,7 @@
+order-service
+https://github.com/users/kecoax-code/packages/container/package/a433-microservices%2Forder-service
+ghcr.io/kecoax-code/a433-microservices/order-service:latest
+
+shipping-service
+https://github.com/users/kecoax-code/packages/container/package/a433-microservices%2Fshipping-service
+ghcr.io/kecoax-code/a433-microservices/shipping-service:latest
