@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  labels: 
+    app: shipping-service
+  name: shipping-service 
+spec: 
+  replicas: 1 
+  selector: 
+    matchLabels:
+      app: shipping-service
+  template:
+    metadata:
+      labels:
+        app: shipping-service
+    spec:
+      containers:
+        # image-repo
+        - image: ghcr.io/kecoax-code/a433-microservices/shipping-service:latest
+          name: shipping-service
