@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  labels:
+    app: order-service 
+  name: order-service
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: order-service 
+  template:
+    metadata:
+      labels:
+        app: order-service 
+    spec:
+      containers:
+        # image-repo
+        - image: ghcr.io/kecoax-code/a433-microservices/order-service:latest 
+          name: order-service
